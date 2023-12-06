@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+}
+
+/*navbar*/
+nav {
+  display: flex;
+  background-color: rgb(226, 199, 153);
+  justify-content: space-between;
+  color: black;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 24px;
+  display: none;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+/*responsif navbar*/
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.hidden {
+    display: none;
+  }
+  .menu-icon {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+}
+/*content*/
+.container {
+  width: 1150px;
+  padding: 10px;
+  margin: 50px auto;
+  background-color: rgb(242, 236, 190);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+#foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#artikel1 {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-top: -20px;
+}
+#artikel1 h5 {
+  color: gray;
+}
+
+.button {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+#button1 {
+  box-sizing: border-box;
+  border: 1px solid rgb(101, 2, 194);
+  color: rgb(255, 255, 255);
+  background-color: rgb(101, 2, 194);
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  margin-right: 20px;
+  border-radius: 10%;
+  transition: all 0.3s;
+}
+
+#button1:hover {
+  transform: scale(1.1);
+}
+
+#button2 {
+  box-sizing: border-box;
+  border: 1px solid #333;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10%;
+  transition: all 0.3s;
+}
+#button2:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+#artikel2 {
+  display: flex;
+  border-left: 2px solid #333;
+  padding: 5px;
+}
+
+#question {
+  list-style: none;
+  font-weight: bold;
+  margin-right: 30px;
+  font-size: 1.2em;
+}
+#answer {
+  list-style: none;
+
+  margin-right: 40px;
+  font-size: 1.2em;
+}
+#question li,
+#answer li {
+  margin-bottom: 10px;
+}
+
+.formulir {
+  width: 1150px;
+  min-height: 200px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: rgb(226, 199, 153);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(242, 236, 190);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+/*responsifcontent*/
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  #foto {
+    margin: 10px auto;
+  }
+  #artikel1,
+  #artikel2 {
+    align-items: center;
+    border-left: none;
+  }
+  #artikel1 h2,
+  #artikel2 ul {
+    margin-top: 8px;
+    align-items: center;
+    margin: 15px auto;
+  }
+
+  #question {
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  #answer {
+    list-style: none;
+    font-size: 0.9em;
+  }
+
+  #question li,
+  #answer li {
+    margin-bottom: 10px;
+  }
+  .formulir {
+    width: 80%;
+  }
+}

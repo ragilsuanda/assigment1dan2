@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portofolio</title>
+    <link rel="stylesheet" href="assets/stayle.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h4>ragil suanda</h4>
+        </div>
+        <div id="icon" class="menu-icon">
+          <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+          <li><a href="index.html">home</a></li>
+          <li><a href="">produk</a></li>
+          <li><a href="">gallery</a></li>
+          <li><a href="">blog</a></li>
+          <li><a href="">my inventory</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="column" id="foto">
+          <img src="assets/images/foto.jpeg" alt="artikel" />
+        </div>
+
+        <div class="column" id="artikel1">
+          <h2 id="name">Ragil suanda</h2>
+          <h5 id="rule">Front End Developer</h5>
+          <ul class="button">
+            <li><a href="" class="button" id="button1">kontak</a></li>
+            <li><a href="" class="button" id="button2">resume</a></li>
+          </ul>
+        </div>
+
+        <div class="column" id="artikel2">
+          <ul id="question">
+            <li>Availability</li>
+            <li>Usia</li>
+            <li>Lokasi</li>
+            <li>Pengalaman</li>
+            <li>Email</li>
+          </ul>
+          <ul id="answer">
+            <li id="AvailabilityText">full time</li>
+            <li id="AgeText">20 tahun</li>
+            <li id="locationText">pekanbaru</li>
+            <li id="experienceText">10</li>
+            <li id="emailText">ahmad20dahalan@gmail.com</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="formulir">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="nameInput" />
+        <label for="rule">Rule:</label>
+        <input type="text" name="rule" id="ruleInput" />
+        <label for="Availability">Availability:</label>
+        <input type="text" name="Availability" id="availabilityInput" />
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="ageInput" />
+        <label for="location">Location:</label>
+        <input type="text" name="address" id="locationInput" />
+        <label for="experience">Years experience</label>
+        <input type="text" name="experience" id="experienceInput" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="emailInput" />
+        <button type="button" onclick="submitdata()">Submit</button>
+      </form>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
